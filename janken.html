@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/sample.css">
+  <title>ラーメン、つけ麺、ぼくブラフ麺！</title>
+</head>
+
+<body>
+  <!-- ここから記述しよう -->
+
+
+  <div class="top">
+    <h1>　ラーメン、つけ麺、</h1>
+    <h2>　ぼくブラフ麺！！</h2>
+    <h3>今日のラーメンどこにする！？</h3>
+  </div>
+
+
+  <div class="profile">
+    <header>
+      <img src="img/profile.jpg" alt="">
+    </header>
+  </div>
+
+
+  <main class="ul">
+    <ul>
+      <li id="gu_btn"><img src="img/1.jpg" alt=""></li>
+      <li id="cho_btn"><img src="img/2.jpg" alt=""></li>
+      <li id="par_btn"><img src="img/3.jpg" alt=""></li>
+    </ul>
+    <div id="com_hand">天神のラーメン屋で迷ったら…</div>
+    <div id="result">♥好き好きロンちゃんオススメ麺♥</div>
+  </main>
+
+  <footer>
+    <div class="youtube">
+      <iframe width="1200" height="675" src="https://www.youtube.com/embed/swT-vt-_eAc" title="YouTube video player"
+        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
+    </div>
+    <img src="img/top.jpg" alt="">
+  </footer>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  <script>
+    //ここに処理を追加
+    $('#gu_btn').on('click', function () {
+      const min = 0;
+      const max = 2;
+      const randomnumber = Math.floor(Math.random() * (max - min + 1)) + min;
+
+      if (randomnumber === 0) {
+        $('#com_hand').text('博多くまちゃんらぁめん とんこつ研究所');
+
+      }
+      else if (randomnumber === 1) {
+        $('#com_hand').text('長浜屋台やまちゃん バンドマン打上げ御用達');
+
+      }
+      else if (randomnumber === 2) {
+        $('#com_hand').text('元祖トマトラーメンと辛麺 三味（333）');
+
+      }
+      if (randomnumber === 0) {
+        $('#result').text('とっても普通な博多とんこつブラフ麺！');
+      }
+      else if (randomnumber === 1) {
+        $('#result').text('呑んだ後の〆はあっさり長浜ブラフ麺！');
+      }
+      else if (randomnumber === 2) {
+        $('#result').text('ジーズアカデミー福岡 徒歩1分ブラフ麺！');
+      }
+    });
+
+
+    $('#cho_btn').on('click', function () {
+      const min = 0;
+      const max = 2;
+      const randomnumber = Math.floor(Math.random() * (max - min + 1)) + min;
+
+      if (randomnumber === 0) {
+        $('#com_hand').text('麺や兼虎 天神本店 つけ麺＆油そば');
+      }
+      else if (randomnumber === 1) {
+        $('#com_hand').text('フジヤマ55（つけ麺 まぜ麺 二郎系）');
+      }
+      else if (randomnumber === 2) {
+        $('#com_hand').text('つけ麺Tetsuji もつ＆魚介スープ');
+      }
+      if (randomnumber === 0) {
+        $('#result').text('辛辛魚で有名な行列覚悟の激辛ブラフ麺！');
+      }
+      else if (randomnumber === 1) {
+        $('#result').text('スープ用ホットプレート常備ブラフ麺！');
+      }
+      else if (randomnumber === 2) {
+        $('#result').text('御鮨屋からのスピンオフ極上ブラフ麺！');
+      }
+    });
+
+
+    $('#par_btn').on('click', function () {
+      const min = 0;
+      const max = 2;
+      const randomnumber = Math.floor(Math.random() * (max - min + 1)) + min;
+
+      if (randomnumber === 0) {
+        $('#com_hand').text('大宰府 八ちゃんラーメン');
+      }
+      else if (randomnumber === 1) {
+        $('#com_hand').text('パニックラーメン 仮面55（パハパハ）');
+      }
+      else if (randomnumber === 2) {
+        $('#com_hand').text('博多元気一杯 青いバケツが営業中の目印');
+      }
+      if (randomnumber === 0) {
+        $('#result').text('油ギトギト胃もたれブラフ麺！');
+      }
+      else if (randomnumber === 1) {
+        $('#result').text('エスニックな唐辛子たっぷりブラフ麺！');
+      }
+      else if (randomnumber === 2) {
+        $('#result').text('麺を最初に食べると強制退店ブラフ麺！');
+      }
+
+
+    });
+  </script>
+
+</body>
+
+</html>
