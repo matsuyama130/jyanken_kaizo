@@ -32,6 +32,7 @@
       <li id="tsukemen"><img src="img/2.jpg" alt=""></li>
       <li id="brafmen"><img src="img/3.jpg" alt=""></li>
     </ul>
+    <div id="youtube"></div>
     <div id="tenjin">天神のラーメン屋で迷ったら…</div>
     <div id="result">♥ ♥ ♥ ♥ ♥ ♥ ♥ ♥</div>
     <div id="comment">好き好きロンちゃんオススメ麺</div>
@@ -58,6 +59,17 @@
 
       let view = "";
 
+      if (randomnumber === 0) {
+        view = '<<iframe width="1024" height="768" src="https://www.youtube.com/embed/l979G7pe7IA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>>';
+      }
+      if (randomnumber === 1) {
+        view = '<<iframe width="1024" height="768" src="https://www.youtube.com/embed/IVcJl2Q9LS8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>>';
+      }
+
+      if (randomnumber === 2) {
+        view = '<<iframe width="1024" height="768" src="https://www.youtube.com/embed/ExvwE3Eyjuk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>>';
+      }
+      $('#youtube').html(view);
 
       if (randomnumber === 0) {
         $('#tenjin').text('博多くまちゃんらぁめん とんこつ研究所');
@@ -115,6 +127,18 @@
       const randomnumber = Math.floor(Math.random() * (max - min + 1)) + min;
 
       if (randomnumber === 0) {
+        view = '<<iframe width="1024" height="768" src="https://www.youtube.com/embed/1e7H_v2krh8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>>';
+      }
+      if (randomnumber === 1) {
+        view = '<<iframe width="1024" height="768" src="https://www.youtube.com/embed/_wZDz_UUo4Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>>';
+      }
+
+      if (randomnumber === 2) {
+        view = '<<iframe width="1024" height="768" src="https://www.youtube.com/embed/YgktzzFe4bA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>>';
+      }
+      $('#youtube').html(view);
+
+      if (randomnumber === 0) {
         $('#tenjin').text('麺や兼虎 天神本店 つけ麺＆油そば');
       }
       else if (randomnumber === 1) {
@@ -163,6 +187,18 @@
       const min = 0;
       const max = 2;
       const randomnumber = Math.floor(Math.random() * (max - min + 1)) + min;
+
+      if (randomnumber === 0) {
+        view = '<<iframe width="1024" height="768" src="https://www.youtube.com/embed/LBiIrtWkZ2w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>>';
+      }
+      if (randomnumber === 1) {
+        view = '<<iframe width="1024" height="768" src="https://www.youtube.com/embed/bm717zgM1cc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>>';
+      }
+
+      if (randomnumber === 2) {
+        view = '<<iframe width="1024" height="768" src="https://www.youtube.com/embed/kx1CaMuy8SM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>>';
+      }
+      $('#youtube').html(view);
 
       if (randomnumber === 0) {
         $('#tenjin').text('大宰府 八ちゃんラーメン');
