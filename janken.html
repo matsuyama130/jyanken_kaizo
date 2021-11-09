@@ -35,6 +35,7 @@
     <div id="tenjin">天神のラーメン屋で迷ったら…</div>
     <div id="result">♥ ♥ ♥ ♥ ♥ ♥ ♥ ♥</div>
     <div id="comment">好き好きロンちゃんオススメ麺</div>
+    <div id="map"></div>
   </main>
 
   <footer>
@@ -91,6 +92,19 @@
         view = '<img src="img/3sanmi.jpg" width="1000">';
       }
       $('#result').html(view);
+
+      if (randomnumber === 0) {
+        view = '<<iframe src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d3323.720491305389!2d130.39135856429243!3d33.58660574957324!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e2!4m5!1s0x354191aa0929fbdf%3A0xd5e535b27b5236c6!2z44CSODEwLTAwNDEg56aP5bKh55yM56aP5bKh5biC5Lit5aSu5Yy65aSn5ZCN77yR5LiB55uu77yT4oiS77yU77yRIOODl-ODquOCquWkp-WQjeODk-ODqyAxRiDjgrjjg7zjgrrjgqLjgqvjg4fjg5_jg7w!3m2!1d33.586664299999995!2d130.394469!4m5!1s0x354193f045c0a023%3A0xec7ef0a4d33a9c7f!2z5Y2a5aSa44GP44G-44Gh44KD44KTIOOCieOBgeOCgeOCkyDlpKflkI3mnKzlupfjgIHjgJI4MTAtMDA0MSDnpo_lsqHnnIznpo_lsqHluILkuK3lpK7ljLrlpKflkI3vvJHkuIHnm67vvJjiiJLvvJQg44Ko44Kv44K344O844OJ5aSn5ZCNIDFG!3m2!1d33.5864707!2d130.3926255!5e0!3m2!1sja!2sjp!4v1636442419644!5m2!1sja!2sjp" width="1000" height="600" style="border:0;" allowfullscreen="" loading="lazy"></iframe>>';
+      }
+      if (randomnumber === 1) {
+        view = '<<iframe src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d6647.171233651835!2d130.39010597228224!3d33.590106810262654!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e2!4m5!1s0x354191aa0929fbdf%3A0xd5e535b27b5236c6!2z44CSODEwLTAwNDEg56aP5bKh55yM56aP5bKh5biC5Lit5aSu5Yy65aSn5ZCN77yR5LiB55uu77yT4oiS77yU77yRIOODl-ODquOCquWkp-WQjeODk-ODqyAxRiDjgrjjg7zjgrrjgqLjgqvjg4fjg5_jg7w!3m2!1d33.586664299999995!2d130.394469!4m5!1s0x3541918905d8a515%3A0xe335c61582362c16!2z56aP5bKh55yM56aP5bKh5biC5Lit5aSu5Yy66Iie6ba077yR5LiB55uu77yUIOiInum2tOOCs-ODvOODneODqeOCuSDplbfmtZzlsYvlj7Ag44KE44G-44Gh44KD44KTIOemj-WyoeWkqeelnuW6lw!3m2!1d33.5933328!2d130.393369!5e0!3m2!1sja!2sjp!4v1636442689958!5m2!1sja!2sjp" width="1000" height="600" style="border:0;" allowfullscreen="" loading="lazy"></iframe>>';
+      }
+
+      if (randomnumber === 2) {
+        view = '<<iframe src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d3323.7065751247715!2d130.3926427642926!3d33.586966999554434!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e2!4m5!1s0x354191aa0929fbdf%3A0xd5e535b27b5236c6!2z44CSODEwLTAwNDEg56aP5bKh55yM56aP5bKh5biC5Lit5aSu5Yy65aSn5ZCN77yR5LiB55uu77yT4oiS77yU77yRIOODl-ODquOCquWkp-WQjeODk-ODqyAxRiDjgrjjg7zjgrrjgqLjgqvjg4fjg5_jg7w!3m2!1d33.586664299999995!2d130.394469!4m5!1s0x3541918685fb9bef%3A0x3ae97e1e35db21f7!2z56aP5bKh55yM56aP5bKh5biC5Lit5aSu5Yy65aSn5ZCN77yR5LiB55uu77yR77yR4oiS77yS77yXIOS4ieWRsygzMzMpIOemj-WyoeWkqeelnuWkp-WQjeW6lw!3m2!1d33.5872472!2d130.3950471!5e0!3m2!1sja!2sjp!4v1636442611041!5m2!1sja!2sjp" width="1000" height="600" style="border:0;" allowfullscreen="" loading="lazy"></iframe>>';
+      }
+      $('#map').html(view);
+
     });
 
 
@@ -129,6 +143,19 @@
         view = '<img src="img/6tetsuji.jpg" width="1000">';
       }
       $('#result').html(view);
+
+      if (randomnumber === 0) {
+        view = '<<iframe src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d3323.712783009626!2d130.39563391429246!3d33.58680584956281!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e2!4m5!1s0x354191aa0929fbdf%3A0xd5e535b27b5236c6!2z44CSODEwLTAwNDEg56aP5bKh55yM56aP5bKh5biC5Lit5aSu5Yy65aSn5ZCN77yR5LiB55uu77yT4oiS77yU77yRIOODl-ODquOCquWkp-WQjeODk-ODqyAxRiDjgrjjg7zjgrrjgqLjgqvjg4fjg5_jg7w!3m2!1d33.586664299999995!2d130.394469!4m5!1s0x35419180a445b00f%3A0x166bb995858617e4!2z56aP5bKh55yM56aP5bKh5biC5Lit5aSu5Yy65rih6L666YCa77yU5LiB55uu77yZIOemj-mFkuODk-ODqyAxRiDpurrjgoTlhbzomY4g5aSp56We5pys5bqX!3m2!1d33.5872028!2d130.40120339999999!5e0!3m2!1sja!2sjp!4v1636442851518!5m2!1sja!2sjp" width="1000" height="600" style="border:0;" allowfullscreen="" loading="lazy"></iframe>>';
+      }
+      if (randomnumber === 1) {
+        view = '<<iframe src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d1661.86413483481!2d130.3948476079341!3d33.58640382960644!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e2!4m5!1s0x354191aa0929fbdf%3A0xd5e535b27b5236c6!2z44CSODEwLTAwNDEg56aP5bKh55yM56aP5bKh5biC5Lit5aSu5Yy65aSn5ZCN77yR5LiB55uu77yT4oiS77yU77yRIOODl-ODquOCquWkp-WQjeODk-ODqyAxRiDjgrjjg7zjgrrjgqLjgqvjg4fjg5_jg7w!3m2!1d33.586664299999995!2d130.394469!4m5!1s0x354191590656dca3%3A0x5d25f5e8a924b934!2z56aP5bKh55yM56aP5bKh5biC5Lit5aSu5Yy65LuK5rOJ77yR5LiB55uu77yR77yZ4oiS77yR77ySIOODleOCuOODpOODnjU1IOemj-WyoeWkqeelnuW6lw!3m2!1d33.5859878!2d130.3971689!5e0!3m2!1sja!2sjp!4v1636442905171!5m2!1sja!2sjp" width="1000" height="600" style="border:0;" allowfullscreen="" loading="lazy"></iframe>>';
+      }
+
+      if (randomnumber === 2) {
+        view = '<<iframe src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d13295.69018541084!2d130.3899239693474!3d33.58136021829984!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e2!4m5!1s0x354191aa0929fbdf%3A0xd5e535b27b5236c6!2z44CSODEwLTAwNDEg56aP5bKh55yM56aP5bKh5biC5Lit5aSu5Yy65aSn5ZCN77yR5LiB55uu77yT4oiS77yU77yRIOODl-ODquOCquWkp-WQjeODk-ODqyAxRiDjgrjjg7zjgrrjgqLjgqvjg4fjg5_jg7w!3m2!1d33.586664299999995!2d130.394469!4m5!1s0x35419177b09bffff%3A0xa6b1b5ca913525f4!2z56aP5bKh55yM56aP5bKh5biC5Lit5aSu5Yy65bmz5bC-77yR5LiB55uu77yZIOaghOeUsOODk-ODqyDjgaTjgZHpurogVGV0c3VqaSAo44Gm44Gk44GYKQ!3m2!1d33.5758994!2d130.4026365!5e0!3m2!1sja!2sjp!4v1636442959865!5m2!1sja!2sjp" width="1000" height="600" style="border:0;" allowfullscreen="" loading="lazy"></iframe>>';
+      }
+      $('#map').html(view);
+
     });
 
 
@@ -168,6 +195,19 @@
         view = '<img src="img/9genki.jpg" width="1000">';
       }
       $('#result').html(view);
+
+      if (randomnumber === 0) {
+        view = '<<iframe src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d6647.582493182508!2d130.39395032228157!3d33.58476896082154!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e2!4m5!1s0x354191aa0929fbdf%3A0xd5e535b27b5236c6!2z44CSODEwLTAwNDEg56aP5bKh55yM56aP5bKh5biC5Lit5aSu5Yy65aSn5ZCN77yR5LiB55uu77yT4oiS77yU77yRIOODl-ODquOCquWkp-WQjeODk-ODqyAxRiDjgrjjg7zjgrrjgqLjgqvjg4fjg5_jg7w!3m2!1d33.586664299999995!2d130.394469!4m5!1s0x3541919c79a70c5b%3A0xe1b87aad22150cb5!2z56aP5bKh55yM56aP5bKh5biC5Lit5aSu5Yy655m96YeR77yR5LiB55uu77yRIOWFq-OBoeOCg-OCk-ODqeODvOODoeODsw!3m2!1d33.5815722!2d130.4036762!5e0!3m2!1sja!2sjp!4v1636443021376!5m2!1sja!2sjp" width="1000" height="600" style="border:0;" allowfullscreen="" loading="lazy"></iframe>>';
+      }
+      if (randomnumber === 1) {
+        view = '<<iframe src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d3323.7985523693333!2d130.3924531642924!3d33.58457929967872!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e2!4m5!1s0x354191aa0929fbdf%3A0xd5e535b27b5236c6!2z44CSODEwLTAwNDEg56aP5bKh55yM56aP5bKh5biC5Lit5aSu5Yy65aSn5ZCN77yR5LiB55uu77yT4oiS77yU77yRIOODl-ODquOCquWkp-WQjeODk-ODqyAxRiDjgrjjg7zjgrrjgqLjgqvjg4fjg5_jg7w!3m2!1d33.586664299999995!2d130.394469!4m5!1s0x354191819064b905%3A0xc4b69daa055f0fe1!2z56aP5bKh55yM56aP5bKh5biC5Lit5aSu5Yy66Jas6Zmi77yS5LiB55uu77yR77yT4oiS77yT77yQIOODqeODvOODoeODs-S7rumdou-8le-8lQ!3m2!1d33.5822386!2d130.3947794!5e0!3m2!1sja!2sjp!4v1636443087017!5m2!1sja!2sjp" width="1000" height="600" style="border:0;" allowfullscreen="" loading="lazy"></iframe>>';
+      }
+
+      if (randomnumber === 2) {
+        view = '<<iframe src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d13293.77874728591!2d130.39251031935382!3d33.59376471567368!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e2!4m5!1s0x354191aa0929fbdf%3A0xd5e535b27b5236c6!2z44CSODEwLTAwNDEg56aP5bKh55yM56aP5bKh5biC5Lit5aSu5Yy65aSn5ZCN77yR5LiB55uu77yT4oiS77yU77yRIOODl-ODquOCquWkp-WQjeODk-ODqyAxRiDjgrjjg7zjgrrjgqLjgqvjg4fjg5_jg7w!3m2!1d33.586664299999995!2d130.394469!4m5!1s0x354191e919a70f47%3A0x3f53894992ad4065!2zR2Vua2kgSXBwYWksIO-8lOS4geebri3vvJPvvJEg5LiL5ZGJ5pyN55S6IOWNmuWkmuWMuiDnpo_lsqHluIIg56aP5bKh55yM!3m2!1d33.6008674!2d130.4072838!5e0!3m2!1sja!2sjp!4v1636443133858!5m2!1sja!2sjp" width="1000" height="600" style="border:0;" allowfullscreen="" loading="lazy"></iframe>>';
+      }
+      $('#map').html(view);
+
     });
   </script>
 
