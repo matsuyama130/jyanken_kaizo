@@ -28,12 +28,13 @@
 
   <main class="ul">
     <ul>
-      <li id="gu_btn"><img src="img/1.jpg" alt=""></li>
-      <li id="cho_btn"><img src="img/2.jpg" alt=""></li>
-      <li id="par_btn"><img src="img/3.jpg" alt=""></li>
+      <li id="ramen"><img src="img/1.jpg" alt=""></li>
+      <li id="tsukemen"><img src="img/2.jpg" alt=""></li>
+      <li id="brafmen"><img src="img/3.jpg" alt=""></li>
     </ul>
-    <div id="com_hand">天神のラーメン屋で迷ったら…</div>
-    <div id="result">♥好き好きロンちゃんオススメ麺♥</div>
+    <div id="tenjin">天神のラーメン屋で迷ったら…</div>
+    <div id="result">♥ ♥ ♥ ♥ ♥ ♥ ♥ ♥</div>
+    <div id="comment">好き好きロンちゃんオススメ麺</div>
   </main>
 
   <footer>
@@ -49,86 +50,124 @@
 
   <script>
     //ここに処理を追加
-    $('#gu_btn').on('click', function () {
+    $('#ramen').on('click', function () {
       const min = 0;
       const max = 2;
       const randomnumber = Math.floor(Math.random() * (max - min + 1)) + min;
 
+      let view = "";
+
+
       if (randomnumber === 0) {
-        $('#com_hand').text('博多くまちゃんらぁめん とんこつ研究所');
+        $('#tenjin').text('博多くまちゃんらぁめん とんこつ研究所');
 
       }
       else if (randomnumber === 1) {
-        $('#com_hand').text('長浜屋台やまちゃん バンドマン打上げ御用達');
+        $('#tenjin').text('長浜屋台やまちゃん バンドマン打上げ御用達');
 
       }
       else if (randomnumber === 2) {
-        $('#com_hand').text('元祖トマトラーメンと辛麺 三味（333）');
+        $('#tenjin').text('元祖トマトラーメンと辛麺 三味（333）');
 
       }
       if (randomnumber === 0) {
-        $('#result').text('とっても普通な博多とんこつブラフ麺！');
+        $('#comment').text('とっても普通な博多とんこつブラフ麺！');
       }
       else if (randomnumber === 1) {
-        $('#result').text('呑んだ後の〆はあっさり長浜ブラフ麺！');
+        $('#comment').text('呑んだ後の〆はあっさり長浜ブラフ麺！');
       }
       else if (randomnumber === 2) {
-        $('#result').text('ジーズアカデミー福岡 徒歩1分ブラフ麺！');
+        $('#comment').text('ジーズアカデミー福岡 徒歩1分ブラフ麺！');
       }
+
+      if (randomnumber === 0) {
+        view = '<img src="img/1kumachan.jpg" width="1000">';
+      }
+      if (randomnumber === 1) {
+        view = '<img src="img/2yamachan.jpg" width="1000">';
+      }
+
+      if (randomnumber === 2) {
+        view = '<img src="img/3sanmi.jpg" width="1000">';
+      }
+      $('#result').html(view);
     });
 
 
-    $('#cho_btn').on('click', function () {
+
+    $('#tsukemen').on('click', function () {
       const min = 0;
       const max = 2;
       const randomnumber = Math.floor(Math.random() * (max - min + 1)) + min;
 
       if (randomnumber === 0) {
-        $('#com_hand').text('麺や兼虎 天神本店 つけ麺＆油そば');
+        $('#tenjin').text('麺や兼虎 天神本店 つけ麺＆油そば');
       }
       else if (randomnumber === 1) {
-        $('#com_hand').text('フジヤマ55（つけ麺 まぜ麺 二郎系）');
+        $('#tenjin').text('フジヤマ55（つけ麺 まぜ麺 二郎系）');
       }
       else if (randomnumber === 2) {
-        $('#com_hand').text('つけ麺Tetsuji もつ＆魚介スープ');
+        $('#tenjin').text('つけ麺Tetsuji もつ＆魚介スープ');
       }
       if (randomnumber === 0) {
-        $('#result').text('辛辛魚で有名な行列覚悟の激辛ブラフ麺！');
+        $('#comment').text('辛辛魚で有名な行列覚悟の激辛ブラフ麺！');
       }
       else if (randomnumber === 1) {
-        $('#result').text('スープ用ホットプレート常備ブラフ麺！');
+        $('#comment').text('スープ用ホットプレート常備ブラフ麺！');
       }
       else if (randomnumber === 2) {
-        $('#result').text('御鮨屋からのスピンオフ極上ブラフ麺！');
+        $('#comment').text('御鮨屋からのスピンオフ極上ブラフ麺！');
       }
+      if (randomnumber === 0) {
+        view = '<img src="img/4kanetora.jpg" width="1000">';
+      }
+      if (randomnumber === 1) {
+        view = '<img src="img/5fujiyama.jpg" width="1000">';
+      }
+
+      if (randomnumber === 2) {
+        view = '<img src="img/6tetsuji.jpg" width="1000">';
+      }
+      $('#result').html(view);
     });
 
 
-    $('#par_btn').on('click', function () {
+    $('#brafmen').on('click', function () {
       const min = 0;
       const max = 2;
       const randomnumber = Math.floor(Math.random() * (max - min + 1)) + min;
 
       if (randomnumber === 0) {
-        $('#com_hand').text('大宰府 八ちゃんラーメン');
+        $('#tenjin').text('大宰府 八ちゃんラーメン');
       }
       else if (randomnumber === 1) {
-        $('#com_hand').text('パニックラーメン 仮面55（パハパハ）');
+        $('#tenjin').text('パニックラーメン 仮面55（パハパハ）');
       }
       else if (randomnumber === 2) {
-        $('#com_hand').text('博多元気一杯 青いバケツが営業中の目印');
+        $('#tenjin').text('博多元気一杯 青いバケツが営業中の目印');
       }
       if (randomnumber === 0) {
-        $('#result').text('油ギトギト胃もたれブラフ麺！');
+        $('#comment').text('油ギトギト胃もたれブラフ麺！');
       }
       else if (randomnumber === 1) {
-        $('#result').text('エスニックな唐辛子たっぷりブラフ麺！');
+        $('#comment').text('エスニックな唐辛子たっぷりブラフ麺！');
       }
       else if (randomnumber === 2) {
-        $('#result').text('麺を最初に食べると強制退店ブラフ麺！');
+        $('#comment').text('麺を最初に食べると強制退店ブラフ麺！');
       }
 
 
+      if (randomnumber === 0) {
+        view = '<img src="img/7hattyan.jpg" width="1000">';
+      }
+      if (randomnumber === 1) {
+        view = '<img src="img/8papapa.jpg" width="1000">';
+      }
+
+      if (randomnumber === 2) {
+        view = '<img src="img/9genki.jpg" width="1000">';
+      }
+      $('#result').html(view);
     });
   </script>
 
